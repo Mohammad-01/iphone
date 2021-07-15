@@ -1,4 +1,4 @@
-/*var phoneName = prompt("what is your fav iphone ?")
+var phoneName = prompt("what is your fav iphone ?")
 
 alert("Nice choice " + phoneName )
 
@@ -24,4 +24,3 @@ document.write(
 else{
   alert('This phone is not in the website')
 }
-*/
