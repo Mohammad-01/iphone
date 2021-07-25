@@ -1,27 +1,42 @@
-/*var phoneName = prompt("what is your fav iphone ?")
 
+function rate() {
+  var stars = prompt ("How many stars do you rate the website")
+  alert("Thank you")
+  return alert 
+}
+rate();
+
+var phoneName = prompt("what is your fav phone ?")
 alert("Nice choice " + phoneName )
 
-var search = prompt("What's the phone that you want search about it ?")
+var search = prompt("Choose one tybe of iphone, iphone 5 / iphone 7 / iphone 8 ") 
 
-if(search == "iphone 5"){
-document.write(
-  "<div>" + "<h3>"+"Phone you search about :"  + search+"</h3>")
+while (search != "iphone 5" && search != "iphone 7" && search != "iphone 8" ){ 
+search = prompt("Choose one tybe of iphone, iphone 5 / iphone 7 / iphone 8 ") }
+
+var looppic = prompt ("How many times you want to show the pic ? ")
+
+
+if (search == "iphone 5") {
+document.write("The phone you choose iphone 5, And " + looppic + " pictures as you requested ")
+for ( var i = 0 ; i < looppic ; i++ ){
+document.write("<img src= \"https://www.theiphonewiki.com/w/images/thumb/f/fa/IPhone_5.png/150px-IPhone_5.png\">" + i)
+}
+}
+if (search == "iphone 7") {
+document.write("The phone you choose iphone 7, And " + looppic + " pictures as you requested ")
+for ( var i = 0 ; i < looppic ; i ){
+document.write("<img src=\"https://www.theiphonewiki.com/w/images/a/ab/IPhone_7.png\">" + i)
+}
+}
+if (search == "iphone 8") {
+document.write( "The phone you choose iphone 8, And " + looppic + " pictures as you requested ")
+for ( var i = 0 ; i < looppic ; i++ ){
+document.write("<img src=\"https://www.theiphonewiki.com/w/images/thumb/d/de/IPhone_8.png/150px-IPhone_8.png \">" + i)
+}
 
 }
 
-else if (search =="iphone 7"){
-document.write(
-  "<div>" + "<h3>"+"Phone you search about :"  + search+"</h3>")
 
-}
-else if(search =="iphone 8"){
-document.write(
-  "<div>" + "<h3>"+"Phone you search about :" + search+"</h3>")
 
-}
 
-else{
-  alert('This phone is not in the website')
-}
-*/
